@@ -19,6 +19,10 @@ The Workflow Editor enables researchers to translate a scientific process into a
 
 - ES6(airbnb)
 
+##### Design Pattern
+
+- Atomic Design
+
 #### Getting Started
 
 #### Installing
