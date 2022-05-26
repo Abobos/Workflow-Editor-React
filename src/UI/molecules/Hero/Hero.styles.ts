@@ -11,7 +11,7 @@ export const Overlay = styled.div`
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
 
   background-color: rgba(0, 0, 0, 0.75);
 `;
@@ -28,8 +28,6 @@ export const HeroContainer = styled.div`
 `;
 
 export const Caption = styled.div`
-  transform: translateY(-2rem);
-
   & .first-line {
     line-height: 50px;
     color: #cfa670;

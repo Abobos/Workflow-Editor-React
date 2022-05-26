@@ -1,3 +1,4 @@
+import { HTTPREQUESTMETHOD } from "hooks/useRequest";
 import { createContext } from "react";
 
 import { ObjectProps } from "./types";
@@ -13,7 +14,7 @@ type contextProps = {
   error: string | ObjectProps;
   loading: boolean;
   data: Array<ObjectProps>;
-  makeRequest: (url?: string) => void;
+  makeRequest: <T>(data?: T, method?: HTTPREQUESTMETHOD, url?: string) => void;
 };
 
 const dataContext = createContext<contextProps>(state);

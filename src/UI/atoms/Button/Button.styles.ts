@@ -4,13 +4,15 @@ export const StyledButton = styled.button`
   padding: 1rem;
   background: none;
   display: block;
-  margin-top: 1.5rem;
-  width: 100%;
-  background: #fec055;
+  margin: 1rem auto;
+  width: 30%;
+  text-align: center;
+  background: green;
   outline: none;
   border: none;
   cursor: pointer;
-  color: black;
+  color: white;
+  font-size: 1rem;
   border-radius: 10px;
   &:disabled {
     cursor: wait;

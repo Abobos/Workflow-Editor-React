@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
   background-color: #002e5d;
-  position: fixed;
-  bottom: 0;
   width: 100%;
 
   color: white;
@@ -34,7 +32,6 @@ export const StyledFooter = styled.footer`
   }
 
   @media screen and (min-width: 900px) {
-    position: fixed;
     width: 100%;
     bottom: 0;
     color: white;

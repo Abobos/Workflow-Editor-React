@@ -1,13 +1,13 @@
 import Layout from "UI/templates/Layout";
 import StepFlow from "./StepFlow";
-import { WorkFlowContainer } from "./Workflow.styles";
+import { WorkFlowContainerII } from "./Workflow.styles";
 
 const Workflow = () => {
   return (
     <Layout>
-      <WorkFlowContainer>
+      <WorkFlowContainerII>
         <StepFlow />
-      </WorkFlowContainer>
+      </WorkFlowContainerII>
     </Layout>
   );
 };

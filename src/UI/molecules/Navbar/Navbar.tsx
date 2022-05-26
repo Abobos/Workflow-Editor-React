@@ -7,7 +7,7 @@ const Navbar = () => {
       <NavLink to="/">
         <Logo />
       </NavLink>
-      <StyledNavLink to="/">Add New Workflow</StyledNavLink>
+      <StyledNavLink to="/workflow/new">Add New Workflow</StyledNavLink>
     </StyledNavbar>
   );
 };

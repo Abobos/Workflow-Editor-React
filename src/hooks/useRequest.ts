@@ -10,7 +10,7 @@ const initialState = {
 type reducerState = {
   error: string;
   loading: boolean;
-  data: Array<ObjectProps> | Array<ObjectProps>;
+  data: Array<ObjectProps>;
 };
 
 type actionType = {
@@ -18,6 +18,10 @@ type actionType = {
   payload?: any;
   error?: any;
 };
+export enum HTTPREQUESTMETHOD {
+  POST = "POST",
+  GET = "GET",
+}
 
 const reducerFunction = (state: reducerState, action: actionType) => {
   switch (action.type) {
@@ -38,11 +42,31 @@ const useRequest = () => {
   const { error, data, loading } = state;
 
   const makeRequest = useCallback(
-    async (url: string = "http://localhost:8080/api/v1/workflows") => {
+    async <T>(
+      data: T,
+      method: HTTPREQUESTMETHOD = HTTPREQUESTMETHOD.GET,
+      url: string = "http://localhost:8080/api/v1/workflows"
+    ) => {
       dispatch({ type: "loading" });
 
       try {
-        const response = await (await fetch(url)).json();
+        let response;
+
+        if (method === HTTPREQUESTMETHOD.POST) {
+          response = await (
+            await fetch(url, {
+              method: "POST",
+
+              headers: {
+                "Content-Type": "application/json",
+              },
+
+              body: JSON.stringify(data),
+            })
+          ).json();
+        } else {
+          response = await (await fetch(url)).json();
+        }
 
         dispatch({ type: "data", payload: response.data });
       } catch (err: any) {

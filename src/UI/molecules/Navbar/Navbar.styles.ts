@@ -5,15 +5,15 @@ export const StyledNavbar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 10vh;
   width: 100%;
   background-color: white;
-  z-index: 400;
+  z-index: 900;
   padding: 3.5rem 2rem;
 
   @media screen and (min-width: 1200px) {
     justify-content: space-around;
-    height: 100px;
+    height: 10vh;
     padding: 0 4rem;
   }
 `;

@@ -28,5 +28,6 @@ export const StyledLink = styled(Link)`
   color: white;
   border-radius: 6px;
   padding: 0.9rem;
-  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
 `;

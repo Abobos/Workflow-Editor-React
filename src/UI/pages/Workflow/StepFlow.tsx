@@ -15,6 +15,7 @@ const Flow = () => {
 
   const procedures = JSON.parse(workflow ? workflow.procedures : "[]");
 
+  console.log({ procedures });
   const initialNodes = procedures.map((procedure: Procedure, index: number) => {
     const indexer = index + 1;
 
@@ -41,6 +42,8 @@ const Flow = () => {
     };
   });
 
+  console.log({ initialNodes });
+
   const initialEdges = procedures.map((_: any, index: number) => {
     const indexer = index + 1;
 
@@ -52,6 +55,8 @@ const Flow = () => {
       target: `${nextIndexer}`,
     };
   });
+
+  console.log({ initialEdges });
 
   const [nodes, setNodes] = useState(initialNodes);
   const [edges, setEdges] = useState(initialEdges);
