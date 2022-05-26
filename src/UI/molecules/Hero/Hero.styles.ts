@@ -1,27 +1,9 @@
 import { Link } from "react-router-dom";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 export const StyledHero = styled.div``;
 
 export const StyledHeroText = styled.h1``;
-
-const moveInTop = keyframes`
-  0% {
-      opacity: 0;
-      transform: translateY(-10rem);
-    }
-  
-    50% {
-    opacity: 1;
-    transform: translateY(.6rem);
-  }
-    
-  
-  100% {
-      opacity: 1;
-      transform: translateY(0.4rem);
-    }
-`;
 
 export const Overlay = styled.div`
   display: flex;
@@ -31,7 +13,7 @@ export const Overlay = styled.div`
   width: 100%;
   height: 100vh;
 
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
 `;
 
 export const HeroContainer = styled.div`
@@ -46,7 +28,6 @@ export const HeroContainer = styled.div`
 `;
 
 export const Caption = styled.div`
-  animation: ${moveInTop} 3s cubic-bezier(0.5, 0, 0.5, 1);
   transform: translateY(-2rem);
 
   & .first-line {

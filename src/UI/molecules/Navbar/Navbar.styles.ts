@@ -6,7 +6,6 @@ export const StyledNavbar = styled.nav`
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  position: fixed;
   width: 100%;
   background-color: white;
   z-index: 400;

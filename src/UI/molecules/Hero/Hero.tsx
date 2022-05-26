@@ -15,7 +15,7 @@ const HeroText = () => (
           <br />
           <span className="second-line">Create Workflows</span>
           <br />
-          <StyledHeroLink to="/" className="third-line">
+          <StyledHeroLink to="/workflow" className="third-line">
             View Workflows
           </StyledHeroLink>
         </StyledHeroText>
