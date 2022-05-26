@@ -23,6 +23,10 @@ export enum HTTPREQUESTMETHOD {
   GET = "GET",
 }
 
+const apiUrl = process.env.REACT_APP_URL
+  ? process.env.REACT_APP_URL
+  : "https://localhost:8080";
+
 const reducerFunction = (state: reducerState, action: actionType) => {
   switch (action.type) {
     case "error":
@@ -45,7 +49,7 @@ const useRequest = () => {
     async <T>(
       data: T,
       method: HTTPREQUESTMETHOD = HTTPREQUESTMETHOD.GET,
-      url: string = "http://localhost:8080/api/v1/workflows"
+      url: string = `${apiUrl}/api/v1/workflows`
     ) => {
       dispatch({ type: "loading" });
 

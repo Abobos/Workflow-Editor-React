@@ -15,36 +15,39 @@ const Flow = () => {
 
   const procedures = JSON.parse(workflow ? workflow.procedures : "[]");
 
-  console.log({ procedures });
   const initialNodes = procedures.map((procedure: Procedure, index: number) => {
     const indexer = index + 1;
 
     if (procedure.substeps?.length) {
       return {
         id: indexer.toString(),
-
         data: {
           label: (
             <>
               {procedure.step} <br />
-              substeps: {procedure.substeps.join("\n")},
+              <b>substeps:</b> {procedure.substeps.join("\n")},
             </>
           ),
         },
-        position: { x: 100, y: 2 },
+        position: { x: 150 * index, y: 80 * index },
+
+        style: {
+          fontSize: "8px",
+        },
       };
     }
     return {
       id: indexer.toString(),
 
       data: { label: procedure.step },
-      position: { x: 100, y: 125 },
+      position: { x: 100, y: 100 * index },
+      style: {
+        fontSize: "8px",
+      },
     };
   });
 
-  console.log({ initialNodes });
-
-  const initialEdges = procedures.map((_: any, index: number) => {
+  let initialEdges = procedures.map((_: any, index: number) => {
     const indexer = index + 1;
 
     const nextIndexer = indexer + 1;
@@ -56,7 +59,7 @@ const Flow = () => {
     };
   });
 
-  console.log({ initialEdges });
+  initialEdges = initialEdges.slice(0, initialEdges.length - 1);
 
   const [nodes] = useState(initialNodes);
   const [edges] = useState(initialEdges);

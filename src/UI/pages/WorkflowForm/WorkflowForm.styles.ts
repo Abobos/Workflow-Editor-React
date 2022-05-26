@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const StyledForm = styled.form`
   width: 60%;
-  margin: 6rem auto;
+  margin: 1.5rem auto;
   background-color: white;
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 40px;
 `;

@@ -126,9 +126,9 @@ const WorkflowForm = () => {
     event.preventDefault();
 
     makeRequest(data, HTTPREQUESTMETHOD.POST);
-  };
 
-  if (!error && result) navigate("/workflow", { replace: true });
+    if (!error && result) navigate("/workflow", { replace: true });
+  };
 
   return (
     <Layout>

@@ -4,6 +4,9 @@ export const StyledFooter = styled.footer`
   background-color: #002e5d;
   width: 100%;
 
+  position: fixed;
+  bottom: 0;
+
   color: white;
   display: block;
 
