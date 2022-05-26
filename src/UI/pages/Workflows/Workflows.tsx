@@ -7,7 +7,7 @@ import { WorkFlowContainer } from "../Workflow/Workflow.styles";
 import { Cards } from "./Workflows.styles";
 
 const Workflows = () => {
-  const { data, error, loading, makeRequest } = useDataContext();
+  const { data, loading, makeRequest } = useDataContext();
 
   useEffect(() => {
     makeRequest();

@@ -128,7 +128,7 @@ const WorkflowForm = () => {
     makeRequest(data, HTTPREQUESTMETHOD.POST);
   };
 
-  if (result) navigate("/workflow", { replace: true });
+  if (!error && result) navigate("/workflow", { replace: true });
 
   return (
     <Layout>
