@@ -58,8 +58,8 @@ const Flow = () => {
 
   console.log({ initialEdges });
 
-  const [nodes, setNodes] = useState(initialNodes);
-  const [edges, setEdges] = useState(initialEdges);
+  const [nodes] = useState(initialNodes);
+  const [edges] = useState(initialEdges);
 
   return <ReactFlow nodes={nodes} edges={edges} fitView />;
 };
