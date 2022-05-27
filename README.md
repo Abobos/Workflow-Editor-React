@@ -41,7 +41,7 @@ The Workflow Editor React Application is a SASS solution that automates the crea
 ##### Dev Tools
 
 - REACT
-- JAVASCRIPT(Node.js)
+- TYPESCRIPT
 - CSS-IN-JS(Styled-Components)
 
 ##### Design Pattern
