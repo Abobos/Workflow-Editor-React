@@ -26,6 +26,16 @@ The Workflow Editor React Application is a SASS solution that automates the crea
 - Improve the user experience of the workflow creation process.
 - Write test using React Testing Library to ascertain code changes.
 
+## Screenshots
+
+(Home)[https://github.com/Abobos/Workflow-Editor-React/tree/develop/public/workflows-display/Home.png]
+
+(Workflows)[https://github.com/Abobos/Workflow-Editor-React/tree/develop/public/workflows-display/Workflows.png]
+
+(Workflow)[https://github.com/Abobos/Workflow-Editor-React/tree/develop/public/workflows-display/Workflow.png]
+
+(Workflow Creation)[https://github.com/Abobos/Workflow-Editor-React/tree/develop/public/workflows-display/Workflow-new.png]
+
 #### Tools
 
 ##### Dev Tools
