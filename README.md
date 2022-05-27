@@ -28,13 +28,13 @@ The Workflow Editor React Application is a SASS solution that automates the crea
 
 ## Screenshots
 
-(Home)[https://github.com/Abobos/Workflow-Editor-React/tree/develop/public/workflows-display/Home.png]
+![Home](https://github.com/abobos/workflow-editor-react/tree/develop/public/workflows-display/home.png)
 
-(Workflows)[https://github.com/Abobos/Workflow-Editor-React/tree/develop/public/workflows-display/Workflows.png]
+![Workflows](https://github.com/abobos/workflow-editor-react/tree/develop/public/workflows-display/workflows.png)
 
-(Workflow)[https://github.com/Abobos/Workflow-Editor-React/tree/develop/public/workflows-display/Workflow.png]
+![Workflow](https://github.com/abobos/workflow-editor-react/tree/develop/public/workflows-display/workflow.png)
 
-(Workflow Creation)[https://github.com/Abobos/Workflow-Editor-React/tree/develop/public/workflows-display/Workflow-new.png]
+![Workflow Creation](https://github.com/abobos/workflow-editor-react/tree/develop/public/workflows-display/workflow-new.png)
 
 #### Tools
 
