@@ -1,14 +1,15 @@
-import Layout from "UI/templates/Layout";
+import Navbar from "UI/molecules/Navbar/Navbar";
 import StepFlow from "./StepFlow";
 import { WorkFlowContainerII } from "./Workflow.styles";
 
 const Workflow = () => {
   return (
-    <Layout>
+    <>
+      <Navbar />
       <WorkFlowContainerII>
         <StepFlow />
       </WorkFlowContainerII>
-    </Layout>
+    </>
   );
 };
 
