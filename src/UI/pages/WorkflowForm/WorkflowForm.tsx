@@ -8,7 +8,7 @@ import Button, { ButtonType } from "UI/atoms/Button/Button";
 import Input from "UI/atoms/Input/Input";
 import Select from "UI/atoms/Select/Select";
 import TextArea from "UI/atoms/TextArea/TextArea";
-import Layout from "UI/templates/Layout";
+import Navbar from "UI/molecules/Navbar/Navbar";
 import { StyledForm } from "./WorkflowForm.styles";
 
 const WorkflowForm = () => {
@@ -131,7 +131,8 @@ const WorkflowForm = () => {
   };
 
   return (
-    <Layout>
+    <>
+      <Navbar />
       <StyledForm onSubmit={handleSubmit}>
         <Input
           name="name"
@@ -193,7 +194,7 @@ const WorkflowForm = () => {
           disable={loading}
         />
       </StyledForm>
-    </Layout>
+    </>
   );
 };
 

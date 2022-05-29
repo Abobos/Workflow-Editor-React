@@ -1,8 +1,8 @@
 import useDataContext from "hooks/useDataContext";
 import { useEffect } from "react";
 import Loader from "UI/molecules/Loader/Loader";
+import Navbar from "UI/molecules/Navbar/Navbar";
 import Card from "UI/templates/Card/Card";
-import Layout from "UI/templates/Layout";
 import { WorkFlowContainer } from "../Workflow/Workflow.styles";
 import { Cards } from "./Workflows.styles";
 
@@ -14,7 +14,8 @@ const Workflows = () => {
   }, [makeRequest]);
 
   return (
-    <Layout>
+    <>
+      <Navbar />
       <WorkFlowContainer>
         {loading ? (
           <Loader />
@@ -26,7 +27,7 @@ const Workflows = () => {
           </Cards>
         )}
       </WorkFlowContainer>
-    </Layout>
+    </>
   );
 };
 

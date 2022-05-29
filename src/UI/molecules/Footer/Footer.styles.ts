@@ -3,13 +3,8 @@ import styled from "styled-components";
 export const StyledFooter = styled.footer`
   background-color: #002e5d;
   width: 100%;
-
-  position: fixed;
-  bottom: 0;
-
   color: white;
   display: block;
-
   padding: 2rem;
   justify-content: space-around;
   align-items: center;
@@ -39,7 +34,6 @@ export const StyledFooter = styled.footer`
     bottom: 0;
     color: white;
     display: block;
-
     justify-content: space-around;
     display: flex;
     flex-direction: row;
