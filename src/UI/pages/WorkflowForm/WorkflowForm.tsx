@@ -185,7 +185,7 @@ const WorkflowForm = () => {
         />
 
         <small style={{ fontSize: "13px" }}>
-          Hold ctrl to select multiple apparatus
+          To add multiple steps separate each step with a comma
         </small>
 
         <Button

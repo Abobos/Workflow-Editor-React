@@ -12,7 +12,7 @@ const Select: React.FC<SelectProps> = ({
   selectOptions,
 }) => {
   return (
-    <SelectField name={name} onChange={onChangeFunction} multiple>
+    <SelectField name={name} onChange={onChangeFunction} multiple required>
       {selectOptions.map((selectOption, index) => (
         <option key={index} value={selectOption}>
           {selectOption}
